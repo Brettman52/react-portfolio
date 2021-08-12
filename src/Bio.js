@@ -41,6 +41,7 @@ const ArrowDown1 = styled(ArrowDown)`
 `
 
 
+
 export default function Bio() {
     return (
         <BioSection id="bio">
