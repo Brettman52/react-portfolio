@@ -91,7 +91,7 @@ export default function Nav(props) {
             <NavBar menuToggle={props.menuToggle}>
                 <MasterContainer>
                     <NameAndPicContainer>
-                        <Link to="/"><PortPic src={portPic}/></Link>
+                        <PortPic src={portPic}/>
                         <Name><FirstChar>B</FirstChar>rett <FirstChar>A</FirstChar>dams</Name>
                     </NameAndPicContainer>
                     <MenuContainer>

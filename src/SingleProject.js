@@ -12,8 +12,8 @@ const ProjectHeading = styled.h2 `
 
 const Project = styled.div `
     background-color: rgb(22, 26, 34);
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 8%;
+    margin-right: 8%;
     margin-bottom: 50px;
     border-radius: 10px;
     padding-top: 15px;

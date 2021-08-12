@@ -16,6 +16,8 @@ const EndText = styled.p`
     color: ${props => props.theme.secondary};
     text-align: center;
     font-size: ${props => props.theme.text};
+    margin-left: 8%;
+    margin-right: 8%;
 `
 
 const ArrowContainer = styled.div`
