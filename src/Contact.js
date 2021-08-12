@@ -38,7 +38,7 @@ const Arrow = styled(ArrowDownwardIcon)`
 export default function Contact() {
     return (
         <Element name="contact">
-            <ConHeading>Do You Like What You See?</ConHeading>
+            <ConHeading>Like What You See?</ConHeading>
             <EndText>I'd love to hear from you! Let's talk about possible opportunities with your organization, my projects, or let's simply have a chat.</EndText>
             <ArrowContainer>
                 <Arrow/>
