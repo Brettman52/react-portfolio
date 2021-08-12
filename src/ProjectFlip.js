@@ -150,7 +150,7 @@ export default function ProjectFlip() {
                     </ProjectTextCont>
                     <ButtonContainer>
                         <a
-                            href="https://weather-app-v2-p0u3681ga-brettman52.vercel.app/"
+                            href="https://weather-app-v2-brettman52.vercel.app/"
                             target="blank">
                             <LiveButton size="medium">
                                 Live
