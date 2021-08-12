@@ -31,6 +31,8 @@ const ManDesk = styled.img `
     @media(min-width: 1000px){
         height: 400px;
     }
+
+   
     
 `
 export const ArrowDown = styled(ExpandMoreIcon)`
