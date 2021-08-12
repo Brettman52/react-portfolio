@@ -23,7 +23,13 @@ const BioText = styled.p `
     text-align: left;
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 20px;
+    font-size: ${props => props.theme.text};
+    @media (min-width: 1000px) {
+        margin-left: 70px;
+        margin-right: 70px;
+        text-align: center;
+
+    }
 `
 
 const ArrowDown1 = styled(ArrowDown)`
@@ -33,24 +39,11 @@ const ArrowDown1 = styled(ArrowDown)`
     margin-right: auto;
 }
 `
-// const FlexContainer1 = styled(FlexContainer)`
-//     &&{
-//         justify-content: space-evenly;
-//     }
-// `
-
-const FlexContainer1 = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
-`
 
 
 export default function Bio() {
     return (
         <BioSection id="bio">
-            <FlexContainer1>
             <BioContainer>
             <AboutHeading>
                 About Me
@@ -67,7 +60,6 @@ export default function Bio() {
             </BioContainer>
             <Stack/>
             <a href="#projects"><ArrowDown1/></a>
-            </FlexContainer1>
         </BioSection>
     )
 }

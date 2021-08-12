@@ -33,6 +33,12 @@ const LogoContainer = styled.div `
     text-align: center;
 `
 
+const Wrapper = styled.div`
+ @media (min-width: 1000px) {
+     margin-bottom: 100px;
+ }
+`
+
 export default function Stack() {
 
 
@@ -40,7 +46,7 @@ export default function Stack() {
     const LogoList2 = logoStore2.map(({src, alt, text}, i) => <LogoContainer key={i}><Logo src={src} alt={alt} /><LogoText>{text}</LogoText></LogoContainer>)
 
     return (
-        <div>
+        <Wrapper>
             <StackHeading>
                 Tech Stack
             </StackHeading>
@@ -51,6 +57,6 @@ export default function Stack() {
                 {LogoList2}
             </ImageContainer2>
 
-        </div>
+        </Wrapper>
     )
 }
