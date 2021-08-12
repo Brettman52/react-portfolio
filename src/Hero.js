@@ -11,6 +11,7 @@ const slideInLeftAnim = keyframes `${slideInLeft}`;
 const slideInUpAnim = keyframes `${fadeInUp}`;
 
 const HeroSection = styled.section `
+    height: 100vh;
 `
 
 const ManDesk = styled.img `
