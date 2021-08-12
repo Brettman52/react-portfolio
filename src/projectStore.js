@@ -32,7 +32,7 @@ const projectData = [
         ,
         desc: "This is what you are looking at right now! My React portfolio was built using React, Styled Components, and the React-Animations library.",
         liveLink:"",
-        codeLink:""
+        codeLink:"https://github.com/Brettman52/react-portfolio/tree/main/src"
     },
   
 ]

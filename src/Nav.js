@@ -2,8 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import portPic from './images/PortfolioPortrait-Cropped.jpg';
 import MenuIcon from '@material-ui/icons/Menu';
-import {Link, NavLink} from 'react-router-dom';
+// import {Link, NavLink} from 'react-router-dom';
 import navItems from './Assets/navLinkStore'
+import {Link} from 'react-scroll'
 
 const NavBar = styled.nav `
     background-color: rgb(22, 26, 34);
@@ -77,8 +78,12 @@ export const FirstChar = styled.span`
 
 export default function Nav(props) {
 
+        // const navList = navItems.map(({linkName, dest}, i) => 
+        // <MenuItems key={i}><NavLink onClick={props.menuToggler} to={dest}>{linkName}</NavLink></MenuItems>
+        // );
+
         const navList = navItems.map(({linkName, dest}, i) => 
-        <MenuItems key={i}><NavLink onClick={props.menuToggler} to={dest}>{linkName}</NavLink></MenuItems>
+        <MenuItems key={i}><Link activeClass="active" offset={-150} onClick={props.menuToggler} to={dest}>{linkName}</Link></MenuItems>
         );
         
     return (

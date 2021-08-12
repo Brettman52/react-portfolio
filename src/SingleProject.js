@@ -30,6 +30,10 @@ const AppPic = styled.img `
 const ProjectText = styled.p `
     color:${props => props.theme.secondary};
     padding: 15px;
+    font-size: ${props => props.theme.text};
+    @media (min-width: 1000px) {
+        width: 75%;
+    }
 `
 
 const LiveButton = styled(Button)`
@@ -59,9 +63,13 @@ const ButtonContainer = styled.div `
     text-align: center;
     `
 
+export const ProjectTextCont = styled.div`
+    display: flex;
+    justify-content: center;
+`
+
 export default function SingleProject(props) {
 
-    console.log(props)
     return (
         <div>
             <Project>
@@ -69,15 +77,18 @@ export default function SingleProject(props) {
                     {props.heading}
                 </ProjectHeading>
                 <AppPic src={props.imgSrc}/>
+                <ProjectTextCont>
                 <ProjectText>
                     {props.desc}
                 </ProjectText>
+                </ProjectTextCont>
                 <ButtonContainer>
-                    <a href={props.liveLink} target="blank"><LiveButton size="medium">
+                    {props.heading !== "React Portfolio" && <a href={props.liveLink} target="blank"><LiveButton size="medium">
                         Live
                         <PlayArrowIcon/>
                     </LiveButton>
                     </a>
+                    }
                     <a href={props.codeLink} target="blank"><RepoButton>
                         Code<CodeIcon/>
                     </RepoButton>

@@ -5,6 +5,7 @@ import Nav from './Nav'
 import Hero from './Hero'
 import Bio from './Bio'
 import Projects from './Projects'
+import Contact from './Contact'
 import Footer from './Footer'
 import {ThemeProvider} from 'styled-components';
 
@@ -44,7 +45,8 @@ function App() {
             // primary: "#bb86fc" ,
             primary: "teal", 
             secondary: "#F5F5F5",
-            heading: "30px"
+            heading: "30px",
+            text: "20px"
         
     }
 
@@ -59,6 +61,7 @@ function App() {
                     <Hero/>
                     <Bio/>
                     <Projects/>
+                    <Contact/>
                     <Footer/>
                 </Main>
             </ThemeProvider>

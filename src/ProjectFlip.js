@@ -6,6 +6,7 @@ import weatherPic from './images/weather-app.png';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import FlipCameraAndroidIcon from '@material-ui/icons/FlipCameraAndroid';
 import ReactCardFlip from 'react-card-flip';
+import { ProjectTextCont } from './SingleProject';
 
 const ProjectHeading = styled.h2 `
     color: ${props => props.theme.secondary};
@@ -34,11 +35,21 @@ const AppPic = styled.img `
 const ProjectText = styled.p `
     color:${props => props.theme.secondary};
     padding: 15px;
+    font-size: ${props => props.theme.text};
+
+    @media (min-width: 1000px) {
+        width: 75%;
+    }
 `
 
 const ProjectText1 = styled.p `
     color:${props => props.theme.secondary};
     padding: 15px;
+    font-size: ${props => props.theme.text};
+
+    @media (min-width: 1000px) {
+        width: 75%;
+    }
 `
 
 const LiveButton = styled(Button)`
@@ -125,6 +136,7 @@ export default function ProjectFlip() {
                         Weather App (With Hooks)
                     </ProjectHeading>
                     <AppPic src={weatherPic}/>
+                    <ProjectTextCont>
                     <ProjectText>
                         The Weather App is my latest project. The Weather App was created to allow a
                         user to search for the current weather or multi-day forecast from the United
@@ -133,6 +145,7 @@ export default function ProjectFlip() {
                         responsive design princples. Further, the Weather App uses a more declarative
                         model than my previous applications.
                     </ProjectText>
+                    </ProjectTextCont>
                     <ButtonContainer>
                         <a
                             href="https://weather-app-v2-p0u3681ga-brettman52.vercel.app/"
@@ -163,11 +176,13 @@ export default function ProjectFlip() {
                         Weather App (With Class Components)
                     </ProjectHeading>
                     <AppPic src={weatherPic}/>
+                    <ProjectTextCont>
                     <ProjectText1>
                         This version of the Weather App is functionally the same (pun intended).
                         However, it utilizes React Class Components instead of functional components
                         with hooks.
                     </ProjectText1>
+                    </ProjectTextCont>
                     <ButtonContainer>
                         <a href="https://weather-app-brettman52.vercel.app/" target="blank">
                             <LiveButton size="medium">

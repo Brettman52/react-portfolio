@@ -1,15 +1,15 @@
  const navItems = [
     {
         linkName: "Contact",
-        dest: "/Contact"
+        dest: "contact"
     },
     {
         linkName: "Connect",
-        dest: "/Connect"
+        dest: "footer"
     },
     {
         linkName: "Projects",
-        dest: "/Projects"
+        dest: "projects"
     }
 ]
 

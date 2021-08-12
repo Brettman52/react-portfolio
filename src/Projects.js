@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import SingleProject from './SingleProject'
 import projectData from './projectStore'
 import ProjectFlip from './ProjectFlip'
+import {Element} from 'react-scroll'
 
 const ProjectSection = styled.section `
 
@@ -23,6 +24,7 @@ export default function Projects() {
     <SingleProject key={i} heading={heading} imgSrc={imageSrc} desc={desc} liveLink={liveLink} codeLink={codeLink}/>)
 
     return (
+        <Element name="projects">
         <ProjectSection id="projects">
             <SectionHeading>
                 Projects
@@ -30,5 +32,6 @@ export default function Projects() {
             <ProjectFlip/>
             {projects}
         </ProjectSection>
+        </Element>
     )
 }
