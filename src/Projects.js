@@ -6,7 +6,7 @@ import ProjectFlip from './ProjectFlip'
 import {Element} from 'react-scroll'
 
 const ProjectSection = styled.section `
-
+    margin-top: 300px;
 `
 const SectionHeading = styled.h2 `
     color: ${props => props.theme.primary};

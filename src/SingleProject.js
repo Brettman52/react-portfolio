@@ -25,6 +25,7 @@ const AppPic = styled.img `
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 90%;
 `
 
 const ProjectText = styled.p `

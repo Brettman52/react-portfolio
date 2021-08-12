@@ -24,7 +24,7 @@ const HeroHeading = styled.h1 `
 `
 
 const ManDesk = styled.img `
-    height: 300px;
+    height: 250px;
     animation: 1.5s ${slideInLeftAnim};
     margin-top: 50px;
     

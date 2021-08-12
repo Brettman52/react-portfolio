@@ -10,7 +10,7 @@ const NavBar = styled.nav `
     background-color: rgb(22, 26, 34);
     height: ${props => !props.menuToggle
     ? "10vh"
-    : "30vh"};
+    : "35vh"};
     transition: all 0.7s ease;
     overflow: hidden;
 `

@@ -37,6 +37,8 @@ const Wrapper = styled.div`
  @media (min-width: 1000px) {
      margin-bottom: 100px;
  }
+
+ margin-bottom: 25px;
 `
 
 export default function Stack() {
@@ -56,7 +58,6 @@ export default function Stack() {
             <ImageContainer2>
                 {LogoList2}
             </ImageContainer2>
-
         </Wrapper>
     )
 }
