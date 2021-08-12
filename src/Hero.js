@@ -11,7 +11,16 @@ const slideInLeftAnim = keyframes `${slideInLeft}`;
 const slideInUpAnim = keyframes `${fadeInUp}`;
 
 const HeroSection = styled.section `
-    height: 100vh;
+`
+
+const ManDesk = styled.img `
+    height: 250px;
+    animation: 1.5s ${slideInLeftAnim};
+    margin-top: 50px;
+
+    @media(min-width: 1000px){
+        height: 400px;
+    }
 `
 
 const HeroHeading = styled.h1 `
@@ -23,18 +32,6 @@ const HeroHeading = styled.h1 `
     animation: 2s ${slideInRightAnim};
 `
 
-const ManDesk = styled.img `
-    height: 250px;
-    animation: 1.5s ${slideInLeftAnim};
-    margin-top: 50px;
-
-    @media(min-width: 1000px){
-        height: 400px;
-    }
-
-   
-    
-`
 export const ArrowDown = styled(ExpandMoreIcon)`
     && {
         font-size: 100px;
@@ -54,7 +51,7 @@ export const FlexContainer = styled.div `
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     height: 90%;
 `
 export default function Hero(props) {
