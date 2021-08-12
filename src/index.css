@@ -19,11 +19,11 @@ body {
 
 
 body{
-  background-color: green;
+  background-color: rgb(40, 44, 54);
 }
 
 html {
-  background-color: blue;
+  background-color: rgb(40, 44, 54);
   scroll-behavior: smooth;
 }
 code {

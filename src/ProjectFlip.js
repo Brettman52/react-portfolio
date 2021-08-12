@@ -95,11 +95,10 @@ const FlipParentButton = styled(Button)`
     }
 `
 
-
 const Wrapper = styled.div `
 `
 
-const Project1= styled.div`
+const Project1 = styled.div `
  background-color: rgb(22, 26, 34);
     margin-left: 5%;
     margin-right: 5%;
@@ -116,7 +115,7 @@ export default function ProjectFlip() {
 
     const handleClick = (e) => {
         e.preventDefault();
-        setIsFlipped(isFlipped => !isFlipped) 
+        setIsFlipped(isFlipped => !isFlipped)
     }
     return (
         <Wrapper>
@@ -130,20 +129,25 @@ export default function ProjectFlip() {
                         The Weather App is my latest project. The Weather App was created to allow a
                         user to search for the current weather or multi-day forecast from the United
                         States and around the globe. This app was created using React, React Hooks React
-                        Router, React Context, Fetch API, Styled Components, and Material-UI. Further,
-                        the Weather App uses a more declarative model than my previous applications.
+                        Router, React Context, Fetch API, Styled Components, Material-UI and follows
+                        responsive design princples. Further, the Weather App uses a more declarative
+                        model than my previous applications.
                     </ProjectText>
                     <ButtonContainer>
-                        <a href="https://weather-app-v2-p0u3681ga-brettman52.vercel.app/" target="blank">
-                        <LiveButton size="medium">
-                            Live
-                            <PlayArrowIcon/>
-                        </LiveButton>
+                        <a
+                            href="https://weather-app-v2-p0u3681ga-brettman52.vercel.app/"
+                            target="blank">
+                            <LiveButton size="medium">
+                                Live
+                                <PlayArrowIcon/>
+                            </LiveButton>
                         </a>
-                        <a href="https://github.com/Brettman52/WeatherApp_v2/tree/main/src" target="blank">
-                        <RepoButton>
-                            Code<CodeIcon/>
-                        </RepoButton>
+                        <a
+                            href="https://github.com/Brettman52/WeatherApp_v2/tree/main/src"
+                            target="blank">
+                            <RepoButton>
+                                Code<CodeIcon/>
+                            </RepoButton>
                         </a>
                     </ButtonContainer>
                     <FlipContainer>
@@ -166,15 +170,15 @@ export default function ProjectFlip() {
                     </ProjectText1>
                     <ButtonContainer>
                         <a href="https://weather-app-brettman52.vercel.app/" target="blank">
-                        <LiveButton size="medium">
-                            Live
-                            <PlayArrowIcon/>
-                        </LiveButton>
+                            <LiveButton size="medium">
+                                Live
+                                <PlayArrowIcon/>
+                            </LiveButton>
                         </a>
                         <a href="https://github.com/Brettman52/WeatherApp/tree/main/src" target="blank">
                             <RepoButton>
-                            Code<CodeIcon/>
-                        </RepoButton>
+                                Code<CodeIcon/>
+                            </RepoButton>
                         </a>
                     </ButtonContainer>
                     <FlipContainer>
