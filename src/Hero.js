@@ -19,7 +19,7 @@ const HeroHeading = styled.h1 `
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 35px;
+    font-size: 30px;
     animation: 2s ${slideInRightAnim};
 `
 
@@ -27,6 +27,10 @@ const ManDesk = styled.img `
     height: 250px;
     animation: 1.5s ${slideInLeftAnim};
     margin-top: 50px;
+
+    @media(min-width: 1000px){
+        height: 400px;
+    }
     
 `
 export const ArrowDown = styled(ExpandMoreIcon)`
