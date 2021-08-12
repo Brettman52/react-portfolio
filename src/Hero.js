@@ -36,6 +36,7 @@ const HeroHeading = styled.h1 `
 export const ArrowDown = styled(ExpandMoreIcon)`
     && {
         font-size: 100px;
+        display: none;
         color: ${props => props.theme.primary};
         transition: all .5s ease;
         cursor: pointer;
@@ -44,6 +45,10 @@ export const ArrowDown = styled(ExpandMoreIcon)`
         &:hover {
             transform: scale(1.5);
             transition: all .5s ease;
+        }
+
+        @media(min-width: 1000px){
+            display: block;
         }
     }
 `

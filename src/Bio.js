@@ -28,15 +28,19 @@ const BioText = styled.p `
         margin-left: 15%;
         margin-right: 15%;
         text-align: center;
-
     }
 `
 
 const ArrowDown1 = styled(ArrowDown)`
 && {
-    display: block;
+    display: none;
     margin-left: auto;
     margin-right: auto;
+
+
+    @media (min-width: 1000px){
+        display: block;
+    }
 }
 `
 
