@@ -52,7 +52,7 @@ export const FlexContainer = styled.div `
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     height: 90%;
 `
 export default function Hero(props) {

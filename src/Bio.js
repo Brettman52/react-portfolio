@@ -25,8 +25,8 @@ const BioText = styled.p `
     margin-right: 5%;
     font-size: ${props => props.theme.text};
     @media (min-width: 1000px) {
-        margin-left: 70px;
-        margin-right: 70px;
+        margin-left: 15%;
+        margin-right: 15%;
         text-align: center;
 
     }
@@ -40,11 +40,19 @@ const ArrowDown1 = styled(ArrowDown)`
 }
 `
 
+const FlexContainer = styled.div`
+     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+`
+
 
 
 export default function Bio() {
     return (
         <BioSection id="bio">
+            <FlexContainer>
             <BioContainer>
             <AboutHeading>
                 About Me
@@ -61,6 +69,7 @@ export default function Bio() {
             </BioContainer>
             <Stack/>
             <a href="#projects"><ArrowDown1/></a>
+            </FlexContainer>
         </BioSection>
     )
 }
